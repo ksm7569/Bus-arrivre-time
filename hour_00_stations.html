@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1554eb01a4df59a50c7386765c7db9cd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 800.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1554eb01a4df59a50c7386765c7db9cd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1554eb01a4df59a50c7386765c7db9cd = L.map(
+                "map_1554eb01a4df59a50c7386765c7db9cd",
+                {
+                    center: [33.434528305162104, 126.60345052495758],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e185500585fbf29c4e27c1abc82c93be = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e185500585fbf29c4e27c1abc82c93be.addTo(map_1554eb01a4df59a50c7386765c7db9cd);
+        
+    
+            var marker_656419a14c809c5284aba95f672027be = L.marker(
+                [33.495117, 126.896217],
+                {
+}
+            ).addTo(map_1554eb01a4df59a50c7386765c7db9cd);
+        
+    
+            var icon_7978d368df3ed5f2556a263ca3893e56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba92ba38e4f5fddfa24c8f61d9bf80f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9de7e27db7f4932827fa3e0e12cb9d2f = $(`<div id="html_9de7e27db7f4932827fa3e0e12cb9d2f" style="width: 100.0%; height: 100.0%;">종달리</div>`)[0];
+                popup_ba92ba38e4f5fddfa24c8f61d9bf80f4.setContent(html_9de7e27db7f4932827fa3e0e12cb9d2f);
+            
+        
+
+        marker_656419a14c809c5284aba95f672027be.bindPopup(popup_ba92ba38e4f5fddfa24c8f61d9bf80f4)
+        ;
+
+        
+    
+    
+            marker_656419a14c809c5284aba95f672027be.bindTooltip(
+                `<div>
+                     종달리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_656419a14c809c5284aba95f672027be.setIcon(icon_7978d368df3ed5f2556a263ca3893e56);
+            
+    
+            var marker_08bf507f65b52a69bb75b52859de6b69 = L.marker(
+                [33.4929, 126.896483],
+                {
+}
+            ).addTo(map_1554eb01a4df59a50c7386765c7db9cd);
+        
+    
+            var icon_40828c893e600cf49c588b12538b18f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b4ab8613a3e2a929838e40ebd5cf428 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f21276fd03c02ac652f274774b02b7c5 = $(`<div id="html_f21276fd03c02ac652f274774b02b7c5" style="width: 100.0%; height: 100.0%;">종달초등학교</div>`)[0];
+                popup_2b4ab8613a3e2a929838e40ebd5cf428.setContent(html_f21276fd03c02ac652f274774b02b7c5);
+            
+        
+
+        marker_08bf507f65b52a69bb75b52859de6b69.bindPopup(popup_2b4ab8613a3e2a929838e40ebd5cf428)
+        ;
+
+        
+    
+    
+            marker_08bf507f65b52a69bb75b52859de6b69.bindTooltip(
+                `<div>
+                     종달초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_08bf507f65b52a69bb75b52859de6b69.setIcon(icon_40828c893e600cf49c588b12538b18f5);
+            
+    
+            var marker_0c36852408df2c95d1aabba0719876fc = L.marker(
+                [33.448681, 126.916004],
+                {
+}
+            ).addTo(map_1554eb01a4df59a50c7386765c7db9cd);
+        
+    
+            var icon_fae52d1bd00cd07e8b9310306b097aef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2b7472d1b318df1394beeb9496db9a06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_112ad269419754b9247a82b6a1d221dc = $(`<div id="html_112ad269419754b9247a82b6a1d221dc" style="width: 100.0%; height: 100.0%;">고성리제주은행</div>`)[0];
+                popup_2b7472d1b318df1394beeb9496db9a06.setContent(html_112ad269419754b9247a82b6a1d221dc);
+            
+        
+
+        marker_0c36852408df2c95d1aabba0719876fc.bindPopup(popup_2b7472d1b318df1394beeb9496db9a06)
+        ;
+
+        
+    
+    
+            marker_0c36852408df2c95d1aabba0719876fc.bindTooltip(
+                `<div>
+                     고성리제주은행
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0c36852408df2c95d1aabba0719876fc.setIcon(icon_fae52d1bd00cd07e8b9310306b097aef);
+            
+    
+            var marker_5d67fee5d9e1d4a3ce28563ad22b81ba = L.marker(
+                [33.462717, 126.933033],
+                {
+}
+            ).addTo(map_1554eb01a4df59a50c7386765c7db9cd);
+        
+    
+            var icon_ad150b8f64bb333ab7d9a789ad23832c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9f5001139ec2d4c96362c902771e2a81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7e759001a9abb07d396d7536b6ca522 = $(`<div id="html_e7e759001a9abb07d396d7536b6ca522" style="width: 100.0%; height: 100.0%;">성산일출봉입구</div>`)[0];
+                popup_9f5001139ec2d4c96362c902771e2a81.setContent(html_e7e759001a9abb07d396d7536b6ca522);
+            
+        
+
+        marker_5d67fee5d9e1d4a3ce28563ad22b81ba.bindPopup(popup_9f5001139ec2d4c96362c902771e2a81)
+        ;
+
+        
+    
+    
+            marker_5d67fee5d9e1d4a3ce28563ad22b81ba.bindTooltip(
+                `<div>
+                     성산일출봉입구
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5d67fee5d9e1d4a3ce28563ad22b81ba.setIcon(icon_ad150b8f64bb333ab7d9a789ad23832c);
+            
+    
+            var marker_4fcb20b7e62837c186624521304edf6f = L.marker(
+                [33.465214, 126.93518799999998],
+                {
+}
+            ).addTo(map_1554eb01a4df59a50c7386765c7db9cd);
+        
+    
+            var icon_11a5fd50109e1e575abc93db0ce8639c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "bus",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7e7db08df5fad587322823d2e2197fd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41e39e3e23837d7a81841b1bac3bf8a2 = $(`<div id="html_41e39e3e23837d7a81841b1bac3bf8a2" style="width: 100.0%; height: 100.0%;">성산리</div>`)[0];
+                popup_7e7db08df5fad587322823d2e2197fd3.setContent(html_41e39e3e23837d7a81841b1bac3bf8a2);
+            
+        
+
+        marker_4fcb20b7e62837c186624521304edf6f.bindPopup(popup_7e7db08df5fad587322823d2e2197fd3)
+        ;
+
+        
+    
+    
+            marker_4fcb20b7e62837c186624521304edf6f.bindTooltip(
+                `<div>
+                     성산리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4fcb20b7e62837c186624521304edf6f.setIcon(icon_11a5fd50109e1e575abc93db0ce8639c);
+            
+</script>
+</html>
