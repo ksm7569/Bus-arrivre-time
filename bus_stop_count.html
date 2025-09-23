@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3669f884a9b79597cf429aa28bc97a85 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 800.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3669f884a9b79597cf429aa28bc97a85" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3669f884a9b79597cf429aa28bc97a85 = L.map(
+                "map_3669f884a9b79597cf429aa28bc97a85",
+                {
+                    center: [33.44326954285714, 126.52657205714287],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9972c823f370002be1d027c344812328 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9972c823f370002be1d027c344812328.addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+            var circle_marker_b1f284fa4bb1299d9e76ffd66461cdc4 = L.circleMarker(
+                [33.457724, 126.554014],
+                {"bubblingMouseEvents": true, "color": "#ffe690ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe690ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.067448680351905, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_2cf0bcf48b784738d72d084f06c8f555 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5642fdc25a6f9baf06431a53e508e7a = $(`<div id="html_c5642fdc25a6f9baf06431a53e508e7a" style="width: 100.0%; height: 100.0%;">제대마을<br>정차 횟수 : 2232</div>`)[0];
+                popup_2cf0bcf48b784738d72d084f06c8f555.setContent(html_c5642fdc25a6f9baf06431a53e508e7a);
+            
+        
+
+        circle_marker_b1f284fa4bb1299d9e76ffd66461cdc4.bindPopup(popup_2cf0bcf48b784738d72d084f06c8f555)
+        ;
+
+        
+    
+    
+            circle_marker_b1f284fa4bb1299d9e76ffd66461cdc4.bindTooltip(
+                `<div>
+                     제대마을
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_44b050409f09ccef1beb37238554c958 = L.circleMarker(
+                [33.479705, 126.543811],
+                {"bubblingMouseEvents": true, "color": "#800026ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#800026ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_123aec2de3bb1e15811a59e8fe0c7b38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f942acacad061a95bda4f2958f75706a = $(`<div id="html_f942acacad061a95bda4f2958f75706a" style="width: 100.0%; height: 100.0%;">남국원(아라방면)<br>정차 횟수 : 3361</div>`)[0];
+                popup_123aec2de3bb1e15811a59e8fe0c7b38.setContent(html_f942acacad061a95bda4f2958f75706a);
+            
+        
+
+        circle_marker_44b050409f09ccef1beb37238554c958.bindPopup(popup_123aec2de3bb1e15811a59e8fe0c7b38)
+        ;
+
+        
+    
+    
+            circle_marker_44b050409f09ccef1beb37238554c958.bindTooltip(
+                `<div>
+                     남국원(아라방면)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_42c3046422e0efa771e8cb807b80c4bd = L.circleMarker(
+                [33.485662, 126.494923],
+                {"bubblingMouseEvents": true, "color": "#d30e20ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d30e20ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.64222873900293, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_a06c99598e7865a1fed369e39da8812e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2610229fdabfac1b812c1484a176077a = $(`<div id="html_2610229fdabfac1b812c1484a176077a" style="width: 100.0%; height: 100.0%;">도호동<br>정차 횟수 : 3093</div>`)[0];
+                popup_a06c99598e7865a1fed369e39da8812e.setContent(html_2610229fdabfac1b812c1484a176077a);
+            
+        
+
+        circle_marker_42c3046422e0efa771e8cb807b80c4bd.bindPopup(popup_a06c99598e7865a1fed369e39da8812e)
+        ;
+
+        
+    
+    
+            circle_marker_42c3046422e0efa771e8cb807b80c4bd.bindTooltip(
+                `<div>
+                     도호동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b6aa43d879855e14ad55f0c3738a5b10 = L.circleMarker(
+                [33.489633000000005, 126.486],
+                {"bubblingMouseEvents": true, "color": "#ffeb9aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb9aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.715542521994134, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_f9426222dba4906300eb9d37675cf96e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12e72ad7d8576f1d2816f5be7339de80 = $(`<div id="html_12e72ad7d8576f1d2816f5be7339de80" style="width: 100.0%; height: 100.0%;">한라병원<br>정차 횟수 : 2192</div>`)[0];
+                popup_f9426222dba4906300eb9d37675cf96e.setContent(html_12e72ad7d8576f1d2816f5be7339de80);
+            
+        
+
+        circle_marker_b6aa43d879855e14ad55f0c3738a5b10.bindPopup(popup_f9426222dba4906300eb9d37675cf96e)
+        ;
+
+        
+    
+    
+            circle_marker_b6aa43d879855e14ad55f0c3738a5b10.bindTooltip(
+                `<div>
+                     한라병원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eebecbd06ecca0af2cd24ea6f13ef645 = L.circleMarker(
+                [33.4899, 126.488917],
+                {"bubblingMouseEvents": true, "color": "#fed470ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed470ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.219941348973606, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_d09c76309da3ba111baaf30569513a44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9612144da5c971cb96ea6bf69ac6864 = $(`<div id="html_e9612144da5c971cb96ea6bf69ac6864" style="width: 100.0%; height: 100.0%;">삼무공원사거리<br>정차 횟수 : 2363</div>`)[0];
+                popup_d09c76309da3ba111baaf30569513a44.setContent(html_e9612144da5c971cb96ea6bf69ac6864);
+            
+        
+
+        circle_marker_eebecbd06ecca0af2cd24ea6f13ef645.bindPopup(popup_d09c76309da3ba111baaf30569513a44)
+        ;
+
+        
+    
+    
+            circle_marker_eebecbd06ecca0af2cd24ea6f13ef645.bindTooltip(
+                `<div>
+                     삼무공원사거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_87665a1f25d4bcccee9f04b88843a537 = L.circleMarker(
+                [33.487531, 126.489892],
+                {"bubblingMouseEvents": true, "color": "#fd7b37ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7b37ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.431085043988269, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_34a43ff7ab36deb7cdff039fc6c31a9d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_537bdcaf5de62c6ee0fff471ad34739f = $(`<div id="html_537bdcaf5de62c6ee0fff471ad34739f" style="width: 100.0%; height: 100.0%;">제원아파트<br>정차 횟수 : 2728</div>`)[0];
+                popup_34a43ff7ab36deb7cdff039fc6c31a9d.setContent(html_537bdcaf5de62c6ee0fff471ad34739f);
+            
+        
+
+        circle_marker_87665a1f25d4bcccee9f04b88843a537.bindPopup(popup_34a43ff7ab36deb7cdff039fc6c31a9d)
+        ;
+
+        
+    
+    
+            circle_marker_87665a1f25d4bcccee9f04b88843a537.bindTooltip(
+                `<div>
+                     제원아파트
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_57dbff816bc252a7b4dcbcde48aac183 = L.circleMarker(
+                [33.485822, 126.490897],
+                {"bubblingMouseEvents": true, "color": "#fd6430ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd6430ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.967741935483872, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_62445f7b5abb93fb892ee8a0c7cb6a57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48595e4ccdd8168bc1d618dac5f785b3 = $(`<div id="html_48595e4ccdd8168bc1d618dac5f785b3" style="width: 100.0%; height: 100.0%;">은남동<br>정차 횟수 : 2789</div>`)[0];
+                popup_62445f7b5abb93fb892ee8a0c7cb6a57.setContent(html_48595e4ccdd8168bc1d618dac5f785b3);
+            
+        
+
+        circle_marker_57dbff816bc252a7b4dcbcde48aac183.bindPopup(popup_62445f7b5abb93fb892ee8a0c7cb6a57)
+        ;
+
+        
+    
+    
+            circle_marker_57dbff816bc252a7b4dcbcde48aac183.bindTooltip(
+                `<div>
+                     은남동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_03fb13f43d77c1b8566a4457d0c6c7c8 = L.circleMarker(
+                [33.487317, 126.496617],
+                {"bubblingMouseEvents": true, "color": "#fff4b0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958944281524927, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_8c34b1ad7cf4892cf459b96ccb23fc63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7823db774dba5e0a970eb410dfc4379d = $(`<div id="html_7823db774dba5e0a970eb410dfc4379d" style="width: 100.0%; height: 100.0%;">연동주민센터<br>정차 횟수 : 2106</div>`)[0];
+                popup_8c34b1ad7cf4892cf459b96ccb23fc63.setContent(html_7823db774dba5e0a970eb410dfc4379d);
+            
+        
+
+        circle_marker_03fb13f43d77c1b8566a4457d0c6c7c8.bindPopup(popup_8c34b1ad7cf4892cf459b96ccb23fc63)
+        ;
+
+        
+    
+    
+            circle_marker_03fb13f43d77c1b8566a4457d0c6c7c8.bindTooltip(
+                `<div>
+                     연동주민센터
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b072f7b4ea70e60fad3a81305eb966ce = L.circleMarker(
+                [33.491433, 126.496783],
+                {"bubblingMouseEvents": true, "color": "#fff6b4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff6b4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.818181818181818, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_b6ccfccdd7f7d929c9259687bd9bbad2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36a0e1599e7e013c28b3969599ddbd54 = $(`<div id="html_36a0e1599e7e013c28b3969599ddbd54" style="width: 100.0%; height: 100.0%;">제주도청 신제주로터리<br>정차 횟수 : 2090</div>`)[0];
+                popup_b6ccfccdd7f7d929c9259687bd9bbad2.setContent(html_36a0e1599e7e013c28b3969599ddbd54);
+            
+        
+
+        circle_marker_b072f7b4ea70e60fad3a81305eb966ce.bindPopup(popup_b6ccfccdd7f7d929c9259687bd9bbad2)
+        ;
+
+        
+    
+    
+            circle_marker_b072f7b4ea70e60fad3a81305eb966ce.bindTooltip(
+                `<div>
+                     제주도청 신제주로터리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a4e9635795683cae1dfd157f79989a9b = L.circleMarker(
+                [33.500017, 126.525833],
+                {"bubblingMouseEvents": true, "color": "#ffeea1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.486803519061583, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_ea093d6dfbafcb3b732b44ae813ff6f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c0954734de78746bc598f70cde0f154d = $(`<div id="html_c0954734de78746bc598f70cde0f154d" style="width: 100.0%; height: 100.0%;">탐라장애인 종합복지관<br>정차 횟수 : 2166</div>`)[0];
+                popup_ea093d6dfbafcb3b732b44ae813ff6f9.setContent(html_c0954734de78746bc598f70cde0f154d);
+            
+        
+
+        circle_marker_a4e9635795683cae1dfd157f79989a9b.bindPopup(popup_ea093d6dfbafcb3b732b44ae813ff6f9)
+        ;
+
+        
+    
+    
+            circle_marker_a4e9635795683cae1dfd157f79989a9b.bindTooltip(
+                `<div>
+                     탐라장애인 종합복지관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_54f65248b856be57dda2028dabd4b517 = L.circleMarker(
+                [33.476533, 126.544283],
+                {"bubblingMouseEvents": true, "color": "#ffe894ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe894ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.917888563049853, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_d97284169179a18bc32779dee96beb11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be8f484d61ed364e793a41024704b579 = $(`<div id="html_be8f484d61ed364e793a41024704b579" style="width: 100.0%; height: 100.0%;">아라초등학교<br>정차 횟수 : 2215</div>`)[0];
+                popup_d97284169179a18bc32779dee96beb11.setContent(html_be8f484d61ed364e793a41024704b579);
+            
+        
+
+        circle_marker_54f65248b856be57dda2028dabd4b517.bindPopup(popup_d97284169179a18bc32779dee96beb11)
+        ;
+
+        
+    
+    
+            circle_marker_54f65248b856be57dda2028dabd4b517.bindTooltip(
+                `<div>
+                     아라초등학교
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a5bd35dae359a021722585b46e20abc5 = L.circleMarker(
+                [33.473655, 126.545425],
+                {"bubblingMouseEvents": true, "color": "#d20e20ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d20e20ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.686217008797655, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_ba1a67c4583d79fd71a9c6dc7d394657 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6ae7eb939cfb89873bb66fecfa679ae = $(`<div id="html_d6ae7eb939cfb89873bb66fecfa679ae" style="width: 100.0%; height: 100.0%;">아라주공아파트<br>정차 횟수 : 3098</div>`)[0];
+                popup_ba1a67c4583d79fd71a9c6dc7d394657.setContent(html_d6ae7eb939cfb89873bb66fecfa679ae);
+            
+        
+
+        circle_marker_a5bd35dae359a021722585b46e20abc5.bindPopup(popup_ba1a67c4583d79fd71a9c6dc7d394657)
+        ;
+
+        
+    
+    
+            circle_marker_a5bd35dae359a021722585b46e20abc5.bindTooltip(
+                `<div>
+                     아라주공아파트
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fcce7f6f0f7192246306190f0d18f287 = L.circleMarker(
+                [33.47145, 126.5454],
+                {"bubblingMouseEvents": true, "color": "#db141eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#db141eff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.316715542521994, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_19225cf2d1a3d5984b792d090d7f445e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f10c827bfa9b466634e7adcc81c7b1c = $(`<div id="html_8f10c827bfa9b466634e7adcc81c7b1c" style="width: 100.0%; height: 100.0%;">인다마을<br>정차 횟수 : 3056</div>`)[0];
+                popup_19225cf2d1a3d5984b792d090d7f445e.setContent(html_8f10c827bfa9b466634e7adcc81c7b1c);
+            
+        
+
+        circle_marker_fcce7f6f0f7192246306190f0d18f287.bindPopup(popup_19225cf2d1a3d5984b792d090d7f445e)
+        ;
+
+        
+    
+    
+            circle_marker_fcce7f6f0f7192246306190f0d18f287.bindTooltip(
+                `<div>
+                     인다마을
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_990ad0e1ba28886129d6911c7f989365 = L.circleMarker(
+                [33.48486, 126.542928],
+                {"bubblingMouseEvents": true, "color": "#feba54ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#feba54ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.196480938416423, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_f4f3878bafbb7780810d79bf7eb17880 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c859295490abf0aed30631234f8227cb = $(`<div id="html_c859295490abf0aed30631234f8227cb" style="width: 100.0%; height: 100.0%;">제주여자중고등학교(아라방면)<br>정차 횟수 : 2474</div>`)[0];
+                popup_f4f3878bafbb7780810d79bf7eb17880.setContent(html_c859295490abf0aed30631234f8227cb);
+            
+        
+
+        circle_marker_990ad0e1ba28886129d6911c7f989365.bindPopup(popup_f4f3878bafbb7780810d79bf7eb17880)
+        ;
+
+        
+    
+    
+            circle_marker_990ad0e1ba28886129d6911c7f989365.bindTooltip(
+                `<div>
+                     제주여자중고등학교(아라방면)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_cc07f72841abcdad03a35c7e85a16bbb = L.circleMarker(
+                [33.469089000000004, 126.547389],
+                {"bubblingMouseEvents": true, "color": "#ffe084ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe084ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.498533724340176, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_50a5014723e7fdfa2a10ee53188f8bcb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5cb4b59040c4003c0bd90dbd2708695e = $(`<div id="html_5cb4b59040c4003c0bd90dbd2708695e" style="width: 100.0%; height: 100.0%;">제주대학교병원<br>정차 횟수 : 2281</div>`)[0];
+                popup_50a5014723e7fdfa2a10ee53188f8bcb.setContent(html_5cb4b59040c4003c0bd90dbd2708695e);
+            
+        
+
+        circle_marker_cc07f72841abcdad03a35c7e85a16bbb.bindPopup(popup_50a5014723e7fdfa2a10ee53188f8bcb)
+        ;
+
+        
+    
+    
+            circle_marker_cc07f72841abcdad03a35c7e85a16bbb.bindTooltip(
+                `<div>
+                     제주대학교병원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d72a40b1db72ca0ae7ffc1bd4d28ff1e = L.circleMarker(
+                [33.498925, 126.530351],
+                {"bubblingMouseEvents": true, "color": "#fffdc6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffdc6ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.211143695014663, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_a9b69bc974c6368c3e985aa421394422 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18b3bd32b7182c6ebd03b5e81c38af69 = $(`<div id="html_18b3bd32b7182c6ebd03b5e81c38af69" style="width: 100.0%; height: 100.0%;">제주시청(광양방면)<br>정차 횟수 : 2021</div>`)[0];
+                popup_a9b69bc974c6368c3e985aa421394422.setContent(html_18b3bd32b7182c6ebd03b5e81c38af69);
+            
+        
+
+        circle_marker_d72a40b1db72ca0ae7ffc1bd4d28ff1e.bindPopup(popup_a9b69bc974c6368c3e985aa421394422)
+        ;
+
+        
+    
+    
+            circle_marker_d72a40b1db72ca0ae7ffc1bd4d28ff1e.bindTooltip(
+                `<div>
+                     제주시청(광양방면)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7604e82483185321daf9acf5a64d0e1b = L.circleMarker(
+                [33.495540000000005, 126.532907],
+                {"bubblingMouseEvents": true, "color": "#ffffccff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffffccff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.0, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_2d6f942f04b56721f278ff4b8120e890 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83f291cb971081c1a134995083410876 = $(`<div id="html_83f291cb971081c1a134995083410876" style="width: 100.0%; height: 100.0%;">고산동산(광양방면)<br>정차 횟수 : 1997</div>`)[0];
+                popup_2d6f942f04b56721f278ff4b8120e890.setContent(html_83f291cb971081c1a134995083410876);
+            
+        
+
+        circle_marker_7604e82483185321daf9acf5a64d0e1b.bindPopup(popup_2d6f942f04b56721f278ff4b8120e890)
+        ;
+
+        
+    
+    
+            circle_marker_7604e82483185321daf9acf5a64d0e1b.bindTooltip(
+                `<div>
+                     고산동산(광양방면)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a95d2d1649b2a3da1bb13b531773ae1a = L.circleMarker(
+                [33.457848, 126.553938],
+                {"bubblingMouseEvents": true, "color": "#ffe690ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe690ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.067448680351905, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_b4f87c04c10300b456a4bfe13ecb129e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6375922df7a190cf4c5cb6e0ec0f317 = $(`<div id="html_d6375922df7a190cf4c5cb6e0ec0f317" style="width: 100.0%; height: 100.0%;">제대마을<br>정차 횟수 : 2232</div>`)[0];
+                popup_b4f87c04c10300b456a4bfe13ecb129e.setContent(html_d6375922df7a190cf4c5cb6e0ec0f317);
+            
+        
+
+        circle_marker_a95d2d1649b2a3da1bb13b531773ae1a.bindPopup(popup_b4f87c04c10300b456a4bfe13ecb129e)
+        ;
+
+        
+    
+    
+            circle_marker_a95d2d1649b2a3da1bb13b531773ae1a.bindTooltip(
+                `<div>
+                     제대마을
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9f7806939c1034ae5a0c7c72c2b00ac = L.circleMarker(
+                [33.469161, 126.54777],
+                {"bubblingMouseEvents": true, "color": "#ffe084ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffe084ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.498533724340176, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_2c16e27a13f09bd49075707a6745ed7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0082c2041413420494f6d0e5fed24d3a = $(`<div id="html_0082c2041413420494f6d0e5fed24d3a" style="width: 100.0%; height: 100.0%;">제주대학교병원<br>정차 횟수 : 2281</div>`)[0];
+                popup_2c16e27a13f09bd49075707a6745ed7f.setContent(html_0082c2041413420494f6d0e5fed24d3a);
+            
+        
+
+        circle_marker_d9f7806939c1034ae5a0c7c72c2b00ac.bindPopup(popup_2c16e27a13f09bd49075707a6745ed7f)
+        ;
+
+        
+    
+    
+            circle_marker_d9f7806939c1034ae5a0c7c72c2b00ac.bindTooltip(
+                `<div>
+                     제주대학교병원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0a02ac68d228a0e9f74c76f3d378d80c = L.circleMarker(
+                [33.470643, 126.545821],
+                {"bubblingMouseEvents": true, "color": "#db141eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#db141eff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.316715542521994, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_73d9604ef38a848551bf943d81b326d0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_400fafe49c1848df0bd5cf247d0d517a = $(`<div id="html_400fafe49c1848df0bd5cf247d0d517a" style="width: 100.0%; height: 100.0%;">인다마을<br>정차 횟수 : 3056</div>`)[0];
+                popup_73d9604ef38a848551bf943d81b326d0.setContent(html_400fafe49c1848df0bd5cf247d0d517a);
+            
+        
+
+        circle_marker_0a02ac68d228a0e9f74c76f3d378d80c.bindPopup(popup_73d9604ef38a848551bf943d81b326d0)
+        ;
+
+        
+    
+    
+            circle_marker_0a02ac68d228a0e9f74c76f3d378d80c.bindTooltip(
+                `<div>
+                     인다마을
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_fdeb245db4af07536b576a3b4cd070f3 = L.circleMarker(
+                [33.473079, 126.545689],
+                {"bubblingMouseEvents": true, "color": "#d20e20ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d20e20ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.686217008797655, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_3cf49e105d2513c7f98dfd9ced5ca9eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce266fca51aab418b8bbe05f9f008b4d = $(`<div id="html_ce266fca51aab418b8bbe05f9f008b4d" style="width: 100.0%; height: 100.0%;">아라주공아파트<br>정차 횟수 : 3098</div>`)[0];
+                popup_3cf49e105d2513c7f98dfd9ced5ca9eb.setContent(html_ce266fca51aab418b8bbe05f9f008b4d);
+            
+        
+
+        circle_marker_fdeb245db4af07536b576a3b4cd070f3.bindPopup(popup_3cf49e105d2513c7f98dfd9ced5ca9eb)
+        ;
+
+        
+    
+    
+            circle_marker_fdeb245db4af07536b576a3b4cd070f3.bindTooltip(
+                `<div>
+                     아라주공아파트
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8aa2ee088f6bfb697d40e491caa0a9bb = L.circleMarker(
+                [33.500228, 126.525625],
+                {"bubblingMouseEvents": true, "color": "#ffeea1ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeea1ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.486803519061583, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_eb7d793d5b60660bb2d2b0ce6eee133e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_989d780c0a98f4969db1a035dbc6023b = $(`<div id="html_989d780c0a98f4969db1a035dbc6023b" style="width: 100.0%; height: 100.0%;">탐라장애인 종합복지관<br>정차 횟수 : 2166</div>`)[0];
+                popup_eb7d793d5b60660bb2d2b0ce6eee133e.setContent(html_989d780c0a98f4969db1a035dbc6023b);
+            
+        
+
+        circle_marker_8aa2ee088f6bfb697d40e491caa0a9bb.bindPopup(popup_eb7d793d5b60660bb2d2b0ce6eee133e)
+        ;
+
+        
+    
+    
+            circle_marker_8aa2ee088f6bfb697d40e491caa0a9bb.bindTooltip(
+                `<div>
+                     탐라장애인 종합복지관
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4ca2260497db0d92c826923ba32822f1 = L.circleMarker(
+                [33.4911, 126.496467],
+                {"bubblingMouseEvents": true, "color": "#fff6b4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff6b4ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.818181818181818, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_172c2c55554b12df452f47adbac523cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07555eaea14918ee97a7a27978018ac7 = $(`<div id="html_07555eaea14918ee97a7a27978018ac7" style="width: 100.0%; height: 100.0%;">제주도청 신제주로터리<br>정차 횟수 : 2090</div>`)[0];
+                popup_172c2c55554b12df452f47adbac523cf.setContent(html_07555eaea14918ee97a7a27978018ac7);
+            
+        
+
+        circle_marker_4ca2260497db0d92c826923ba32822f1.bindPopup(popup_172c2c55554b12df452f47adbac523cf)
+        ;
+
+        
+    
+    
+            circle_marker_4ca2260497db0d92c826923ba32822f1.bindTooltip(
+                `<div>
+                     제주도청 신제주로터리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f844591ede4ae8b836da93912745abd8 = L.circleMarker(
+                [33.488147, 126.496363],
+                {"bubblingMouseEvents": true, "color": "#fff4b0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fff4b0ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.958944281524927, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_911c4b930d37d7dd5d42062675680db2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fdf813d064e2792d9904e2db38db0b96 = $(`<div id="html_fdf813d064e2792d9904e2db38db0b96" style="width: 100.0%; height: 100.0%;">연동주민센터<br>정차 횟수 : 2106</div>`)[0];
+                popup_911c4b930d37d7dd5d42062675680db2.setContent(html_fdf813d064e2792d9904e2db38db0b96);
+            
+        
+
+        circle_marker_f844591ede4ae8b836da93912745abd8.bindPopup(popup_911c4b930d37d7dd5d42062675680db2)
+        ;
+
+        
+    
+    
+            circle_marker_f844591ede4ae8b836da93912745abd8.bindTooltip(
+                `<div>
+                     연동주민센터
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2effd1d1377ad9302c79e5da4418ffae = L.circleMarker(
+                [33.48581, 126.495011],
+                {"bubblingMouseEvents": true, "color": "#d30e20ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#d30e20ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.64222873900293, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_9599bc3dc501adc0505e58069ac5252a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df6e70a326c290dbb51bc7b287ba9dd4 = $(`<div id="html_df6e70a326c290dbb51bc7b287ba9dd4" style="width: 100.0%; height: 100.0%;">도호동<br>정차 횟수 : 3093</div>`)[0];
+                popup_9599bc3dc501adc0505e58069ac5252a.setContent(html_df6e70a326c290dbb51bc7b287ba9dd4);
+            
+        
+
+        circle_marker_2effd1d1377ad9302c79e5da4418ffae.bindPopup(popup_9599bc3dc501adc0505e58069ac5252a)
+        ;
+
+        
+    
+    
+            circle_marker_2effd1d1377ad9302c79e5da4418ffae.bindTooltip(
+                `<div>
+                     도호동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_967cf95ade15f604ebffa5ce88097706 = L.circleMarker(
+                [33.485877, 126.492481],
+                {"bubblingMouseEvents": true, "color": "#fd6430ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd6430ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.967741935483872, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_c6cc29977c2fe9af8539adb021e30798 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b32c7f475a117154daf9888a6be528f = $(`<div id="html_6b32c7f475a117154daf9888a6be528f" style="width: 100.0%; height: 100.0%;">은남동<br>정차 횟수 : 2789</div>`)[0];
+                popup_c6cc29977c2fe9af8539adb021e30798.setContent(html_6b32c7f475a117154daf9888a6be528f);
+            
+        
+
+        circle_marker_967cf95ade15f604ebffa5ce88097706.bindPopup(popup_c6cc29977c2fe9af8539adb021e30798)
+        ;
+
+        
+    
+    
+            circle_marker_967cf95ade15f604ebffa5ce88097706.bindTooltip(
+                `<div>
+                     은남동
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c5a32a6fb5d45d5801510dae73bd10f0 = L.circleMarker(
+                [33.48845, 126.490133],
+                {"bubblingMouseEvents": true, "color": "#fd7b37ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fd7b37ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.431085043988269, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_0c7f6d23aa217a288334ffaefd27625a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e70b5ff8fb43a0f9e8df2c33d0a70071 = $(`<div id="html_e70b5ff8fb43a0f9e8df2c33d0a70071" style="width: 100.0%; height: 100.0%;">제원아파트<br>정차 횟수 : 2728</div>`)[0];
+                popup_0c7f6d23aa217a288334ffaefd27625a.setContent(html_e70b5ff8fb43a0f9e8df2c33d0a70071);
+            
+        
+
+        circle_marker_c5a32a6fb5d45d5801510dae73bd10f0.bindPopup(popup_0c7f6d23aa217a288334ffaefd27625a)
+        ;
+
+        
+    
+    
+            circle_marker_c5a32a6fb5d45d5801510dae73bd10f0.bindTooltip(
+                `<div>
+                     제원아파트
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_df6c06c99f81dea102b1c3cb04810466 = L.circleMarker(
+                [33.490016, 126.488528],
+                {"bubblingMouseEvents": true, "color": "#fed470ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fed470ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.219941348973606, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_c069b50ef252844a576b1c989c7a5a5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_291baec4fb0e0bb536558418aeb27918 = $(`<div id="html_291baec4fb0e0bb536558418aeb27918" style="width: 100.0%; height: 100.0%;">삼무공원사거리<br>정차 횟수 : 2363</div>`)[0];
+                popup_c069b50ef252844a576b1c989c7a5a5b.setContent(html_291baec4fb0e0bb536558418aeb27918);
+            
+        
+
+        circle_marker_df6c06c99f81dea102b1c3cb04810466.bindPopup(popup_c069b50ef252844a576b1c989c7a5a5b)
+        ;
+
+        
+    
+    
+            circle_marker_df6c06c99f81dea102b1c3cb04810466.bindTooltip(
+                `<div>
+                     삼무공원사거리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_081026327617bd515637d0d6e4d06425 = L.circleMarker(
+                [33.489435, 126.485085],
+                {"bubblingMouseEvents": true, "color": "#ffeb9aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffeb9aff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.715542521994134, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_e9702ffae4cbb1cfe5892442ce252953 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d0cc9ffbfc4a20711a19a695bb5e222 = $(`<div id="html_3d0cc9ffbfc4a20711a19a695bb5e222" style="width: 100.0%; height: 100.0%;">한라병원<br>정차 횟수 : 2192</div>`)[0];
+                popup_e9702ffae4cbb1cfe5892442ce252953.setContent(html_3d0cc9ffbfc4a20711a19a695bb5e222);
+            
+        
+
+        circle_marker_081026327617bd515637d0d6e4d06425.bindPopup(popup_e9702ffae4cbb1cfe5892442ce252953)
+        ;
+
+        
+    
+    
+            circle_marker_081026327617bd515637d0d6e4d06425.bindTooltip(
+                `<div>
+                     한라병원
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b3de93a0030fc0aea56f91ab2d0f693a = L.circleMarker(
+                [33.251152000000005, 126.572902],
+                {"bubblingMouseEvents": true, "color": "#fffabfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffabfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.439882697947214, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_9c9f39b189977a91f5a1cb7fc2a5a45d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f5ea0b973dd025041275d7ef7b436e5 = $(`<div id="html_2f5ea0b973dd025041275d7ef7b436e5" style="width: 100.0%; height: 100.0%;">주공 3 4단지<br>정차 횟수 : 2047</div>`)[0];
+                popup_9c9f39b189977a91f5a1cb7fc2a5a45d.setContent(html_2f5ea0b973dd025041275d7ef7b436e5);
+            
+        
+
+        circle_marker_b3de93a0030fc0aea56f91ab2d0f693a.bindPopup(popup_9c9f39b189977a91f5a1cb7fc2a5a45d)
+        ;
+
+        
+    
+    
+            circle_marker_b3de93a0030fc0aea56f91ab2d0f693a.bindTooltip(
+                `<div>
+                     주공 3 4단지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1a99dd5df1fb2e1fa7181b7f622025f1 = L.circleMarker(
+                [33.248683, 126.568347],
+                {"bubblingMouseEvents": true, "color": "#fe9d43ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9d43ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.357771260997067, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_d5a5b300a53b0585b7dbe7090ee629c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52e0f428585c35ae4d1f8304eda2f723 = $(`<div id="html_52e0f428585c35ae4d1f8304eda2f723" style="width: 100.0%; height: 100.0%;">동문로터리<br>정차 횟수 : 2606</div>`)[0];
+                popup_d5a5b300a53b0585b7dbe7090ee629c9.setContent(html_52e0f428585c35ae4d1f8304eda2f723);
+            
+        
+
+        circle_marker_1a99dd5df1fb2e1fa7181b7f622025f1.bindPopup(popup_d5a5b300a53b0585b7dbe7090ee629c9)
+        ;
+
+        
+    
+    
+            circle_marker_1a99dd5df1fb2e1fa7181b7f622025f1.bindTooltip(
+                `<div>
+                     동문로터리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5ac2730593bd3baa391e7b54c96e448 = L.circleMarker(
+                [33.250433, 126.56505],
+                {"bubblingMouseEvents": true, "color": "#ffdf82ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdf82ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.577712609970675, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_2eda9a98c25d79174fd4034293d5b153 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b914474ec66045a3cebaf3d3710a0c2 = $(`<div id="html_3b914474ec66045a3cebaf3d3710a0c2" style="width: 100.0%; height: 100.0%;">청소년문화의집<br>정차 횟수 : 2290</div>`)[0];
+                popup_2eda9a98c25d79174fd4034293d5b153.setContent(html_3b914474ec66045a3cebaf3d3710a0c2);
+            
+        
+
+        circle_marker_f5ac2730593bd3baa391e7b54c96e448.bindPopup(popup_2eda9a98c25d79174fd4034293d5b153)
+        ;
+
+        
+    
+    
+            circle_marker_f5ac2730593bd3baa391e7b54c96e448.bindTooltip(
+                `<div>
+                     청소년문화의집
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_d9deef1f1b2428bddf225a306173f81b = L.circleMarker(
+                [33.248595, 126.568527],
+                {"bubblingMouseEvents": true, "color": "#fe9d43ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fe9d43ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.357771260997067, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_89b57c5558e4750d9881c9f6e7573fcd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48a9f0a805b5ef770c03d040875174c6 = $(`<div id="html_48a9f0a805b5ef770c03d040875174c6" style="width: 100.0%; height: 100.0%;">동문로터리<br>정차 횟수 : 2606</div>`)[0];
+                popup_89b57c5558e4750d9881c9f6e7573fcd.setContent(html_48a9f0a805b5ef770c03d040875174c6);
+            
+        
+
+        circle_marker_d9deef1f1b2428bddf225a306173f81b.bindPopup(popup_89b57c5558e4750d9881c9f6e7573fcd)
+        ;
+
+        
+    
+    
+            circle_marker_d9deef1f1b2428bddf225a306173f81b.bindTooltip(
+                `<div>
+                     동문로터리
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7189b648eb4ed9499d2585f9a38b22b3 = L.circleMarker(
+                [33.250883, 126.56405],
+                {"bubblingMouseEvents": true, "color": "#ffdf82ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#ffdf82ff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.577712609970675, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_cf9906166bee74c6b323f54d490d6ccf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e284c7bab400422b51dbc9715b0ab7bc = $(`<div id="html_e284c7bab400422b51dbc9715b0ab7bc" style="width: 100.0%; height: 100.0%;">청소년문화의집<br>정차 횟수 : 2290</div>`)[0];
+                popup_cf9906166bee74c6b323f54d490d6ccf.setContent(html_e284c7bab400422b51dbc9715b0ab7bc);
+            
+        
+
+        circle_marker_7189b648eb4ed9499d2585f9a38b22b3.bindPopup(popup_cf9906166bee74c6b323f54d490d6ccf)
+        ;
+
+        
+    
+    
+            circle_marker_7189b648eb4ed9499d2585f9a38b22b3.bindTooltip(
+                `<div>
+                     청소년문화의집
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_8c937b53c2d044ca2cef84c0748abc48 = L.circleMarker(
+                [33.250098, 126.571865],
+                {"bubblingMouseEvents": true, "color": "#fffabfff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#fffabfff", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.439882697947214, "stroke": true, "weight": 3}
+            ).addTo(map_3669f884a9b79597cf429aa28bc97a85);
+        
+    
+        var popup_fd7a83c6b0b309616ac7170777c46163 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9bde775e08c98e7d25deae2d77792a31 = $(`<div id="html_9bde775e08c98e7d25deae2d77792a31" style="width: 100.0%; height: 100.0%;">주공 3 4단지<br>정차 횟수 : 2047</div>`)[0];
+                popup_fd7a83c6b0b309616ac7170777c46163.setContent(html_9bde775e08c98e7d25deae2d77792a31);
+            
+        
+
+        circle_marker_8c937b53c2d044ca2cef84c0748abc48.bindPopup(popup_fd7a83c6b0b309616ac7170777c46163)
+        ;
+
+        
+    
+    
+            circle_marker_8c937b53c2d044ca2cef84c0748abc48.bindTooltip(
+                `<div>
+                     주공 3 4단지
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+    var color_map_403bf2ba8fe847c992a8da1418af06b4 = {};
+
+    
+    color_map_403bf2ba8fe847c992a8da1418af06b4.color = d3.scale.threshold()
+              .domain([1997.0, 1999.7334669338677, 2002.4669338677354, 2005.200400801603, 2007.933867735471, 2010.6673346693387, 2013.4008016032064, 2016.1342685370741, 2018.8677354709419, 2021.6012024048096, 2024.3346693386773, 2027.0681362725452, 2029.801603206413, 2032.5350701402806, 2035.2685370741483, 2038.002004008016, 2040.7354709418837, 2043.4689378757514, 2046.2024048096193, 2048.935871743487, 2051.6693386773545, 2054.4028056112224, 2057.1362725450904, 2059.869739478958, 2062.603206412826, 2065.3366733466933, 2068.070140280561, 2070.8036072144287, 2073.5370741482966, 2076.2705410821645, 2079.004008016032, 2081.7374749499, 2084.4709418837674, 2087.2044088176353, 2089.937875751503, 2092.6713426853707, 2095.4048096192387, 2098.138276553106, 2100.871743486974, 2103.6052104208416, 2106.3386773547095, 2109.072144288577, 2111.805611222445, 2114.539078156313, 2117.2725450901803, 2120.0060120240482, 2122.7394789579157, 2125.4729458917836, 2128.206412825651, 2130.939879759519, 2133.673346693387, 2136.4068136272545, 2139.1402805611224, 2141.87374749499, 2144.607214428858, 2147.3406813627253, 2150.074148296593, 2152.807615230461, 2155.5410821643286, 2158.2745490981965, 2161.008016032064, 2163.741482965932, 2166.4749498997994, 2169.2084168336673, 2171.9418837675353, 2174.6753507014027, 2177.4088176352707, 2180.142284569138, 2182.875751503006, 2185.6092184368736, 2188.3426853707415, 2191.0761523046094, 2193.809619238477, 2196.543086172345, 2199.2765531062123, 2202.0100200400802, 2204.7434869739477, 2207.4769539078156, 2210.2104208416836, 2212.943887775551, 2215.677354709419, 2218.4108216432865, 2221.1442885771544, 2223.877755511022, 2226.61122244489, 2229.3446893787577, 2232.078156312625, 2234.811623246493, 2237.5450901803606, 2240.2785571142285, 2243.012024048096, 2245.745490981964, 2248.478957915832, 2251.2124248496993, 2253.9458917835673, 2256.6793587174348, 2259.4128256513027, 2262.14629258517, 2264.879759519038, 2267.613226452906, 2270.3466933867735, 2273.0801603206414, 2275.813627254509, 2278.547094188377, 2281.2805611222443, 2284.0140280561122, 2286.7474949899797, 2289.4809619238476, 2292.2144288577156, 2294.947895791583, 2297.681362725451, 2300.4148296593185, 2303.1482965931864, 2305.8817635270543, 2308.615230460922, 2311.3486973947897, 2314.082164328657, 2316.815631262525, 2319.5490981963926, 2322.2825651302605, 2325.016032064128, 2327.749498997996, 2330.482965931864, 2333.2164328657313, 2335.9498997995993, 2338.6833667334668, 2341.4168336673347, 2344.1503006012026, 2346.88376753507, 2349.617234468938, 2352.3507014028055, 2355.0841683366734, 2357.817635270541, 2360.551102204409, 2363.2845691382763, 2366.0180360721442, 2368.751503006012, 2371.4849699398796, 2374.2184368737476, 2376.951903807615, 2379.685370741483, 2382.418837675351, 2385.1523046092184, 2387.8857715430863, 2390.619238476954, 2393.3527054108217, 2396.086172344689, 2398.819639278557, 2401.5531062124246, 2404.2865731462925, 2407.0200400801605, 2409.753507014028, 2412.486973947896, 2415.2204408817634, 2417.9539078156313, 2420.687374749499, 2423.4208416833667, 2426.1543086172346, 2428.887775551102, 2431.62124248497, 2434.3547094188375, 2437.0881763527054, 2439.821643286573, 2442.555110220441, 2445.2885771543088, 2448.0220440881762, 2450.755511022044, 2453.4889779559117, 2456.2224448897796, 2458.9559118236475, 2461.689378757515, 2464.422845691383, 2467.1563126252504, 2469.8897795591183, 2472.623246492986, 2475.3567134268537, 2478.090180360721, 2480.823647294589, 2483.557114228457, 2486.2905811623245, 2489.0240480961925, 2491.75751503006, 2494.490981963928, 2497.224448897796, 2499.9579158316633, 2502.691382765531, 2505.4248496993987, 2508.1583166332666, 2510.891783567134, 2513.625250501002, 2516.3587174348695, 2519.0921843687374, 2521.8256513026054, 2524.559118236473, 2527.2925851703408, 2530.0260521042082, 2532.759519038076, 2535.492985971944, 2538.2264529058116, 2540.9599198396795, 2543.693386773547, 2546.426853707415, 2549.1603206412824, 2551.8937875751503, 2554.627254509018, 2557.3607214428857, 2560.0941883767537, 2562.827655310621, 2565.561122244489, 2568.2945891783565, 2571.0280561122245, 2573.7615230460924, 2576.49498997996, 2579.228456913828, 2581.9619238476953, 2584.695390781563, 2587.4288577154307, 2590.1623246492986, 2592.895791583166, 2595.629258517034, 2598.362725450902, 2601.0961923847694, 2603.8296593186374, 2606.563126252505, 2609.296593186373, 2612.0300601202407, 2614.763527054108, 2617.496993987976, 2620.2304609218436, 2622.9639278557115, 2625.697394789579, 2628.430861723447, 2631.1643286573144, 2633.8977955911823, 2636.6312625250503, 2639.3647294589177, 2642.0981963927857, 2644.831663326653, 2647.565130260521, 2650.298597194389, 2653.0320641282565, 2655.7655310621244, 2658.498997995992, 2661.23246492986, 2663.9659318637273, 2666.699398797595, 2669.4328657314627, 2672.1663326653306, 2674.8997995991986, 2677.633266533066, 2680.366733466934, 2683.1002004008014, 2685.8336673346694, 2688.5671342685373, 2691.300601202405, 2694.0340681362727, 2696.76753507014, 2699.501002004008, 2702.2344689378756, 2704.9679358717435, 2707.701402805611, 2710.434869739479, 2713.168336673347, 2715.9018036072143, 2718.6352705410823, 2721.3687374749497, 2724.1022044088177, 2726.8356713426856, 2729.569138276553, 2732.302605210421, 2735.0360721442885, 2737.7695390781564, 2740.503006012024, 2743.236472945892, 2745.9699398797593, 2748.703406813627, 2751.436873747495, 2754.1703406813626, 2756.9038076152306, 2759.637274549098, 2762.370741482966, 2765.104208416834, 2767.8376753507014, 2770.5711422845693, 2773.304609218437, 2776.0380761523047, 2778.771543086172, 2781.50501002004, 2784.2384769539076, 2786.9719438877755, 2789.7054108216435, 2792.438877755511, 2795.172344689379, 2797.9058116232463, 2800.6392785571143, 2803.372745490982, 2806.1062124248497, 2808.8396793587176, 2811.573146292585, 2814.306613226453, 2817.0400801603205, 2819.7735470941884, 2822.507014028056, 2825.240480961924, 2827.9739478957918, 2830.7074148296592, 2833.440881763527, 2836.1743486973946, 2838.9078156312626, 2841.6412825651305, 2844.374749498998, 2847.108216432866, 2849.8416833667334, 2852.5751503006013, 2855.308617234469, 2858.0420841683367, 2860.775551102204, 2863.509018036072, 2866.24248496994, 2868.9759519038075, 2871.7094188376755, 2874.442885771543, 2877.176352705411, 2879.909819639279, 2882.6432865731463, 2885.3767535070137, 2888.1102204408817, 2890.8436873747496, 2893.577154308617, 2896.310621242485, 2899.0440881763525, 2901.7775551102204, 2904.5110220440883, 2907.244488977956, 2909.9779559118238, 2912.7114228456912, 2915.444889779559, 2918.178356713427, 2920.9118236472946, 2923.645290581162, 2926.37875751503, 2929.112224448898, 2931.8456913827654, 2934.5791583166333, 2937.312625250501, 2940.0460921843687, 2942.7795591182366, 2945.513026052104, 2948.246492985972, 2950.9799599198395, 2953.7134268537075, 2956.4468937875754, 2959.180360721443, 2961.9138276553103, 2964.6472945891783, 2967.380761523046, 2970.1142284569137, 2972.8476953907816, 2975.581162324649, 2978.314629258517, 2981.048096192385, 2983.7815631262524, 2986.5150300601204, 2989.248496993988, 2991.9819639278558, 2994.7154308617237, 2997.448897795591, 3000.1823647294586, 3002.9158316633266, 3005.6492985971945, 3008.382765531062, 3011.11623246493, 3013.8496993987974, 3016.5831663326653, 3019.3166332665332, 3022.0501002004007, 3024.783567134268, 3027.517034068136, 3030.250501002004, 3032.983967935872, 3035.7174348697395, 3038.450901803607, 3041.184368737475, 3043.917835671343, 3046.6513026052107, 3049.384769539078, 3052.1182364729457, 3054.8517034068136, 3057.5851703406815, 3060.318637274549, 3063.0521042084165, 3065.7855711422844, 3068.5190380761524, 3071.2525050100203, 3073.9859719438878, 3076.7194388777552, 3079.452905811623, 3082.186372745491, 3084.919839679359, 3087.6533066132265, 3090.386773547094, 3093.120240480962, 3095.85370741483, 3098.5871743486973, 3101.320641282565, 3104.0541082164327, 3106.7875751503007, 3109.5210420841686, 3112.254509018036, 3114.9879759519035, 3117.7214428857715, 3120.4549098196394, 3123.1883767535073, 3125.921843687375, 3128.6553106212423, 3131.38877755511, 3134.122244488978, 3136.8557114228456, 3139.589178356713, 3142.322645290581, 3145.056112224449, 3147.789579158317, 3150.5230460921844, 3153.256513026052, 3155.9899799599198, 3158.7234468937877, 3161.4569138276556, 3164.190380761523, 3166.9238476953906, 3169.6573146292585, 3172.3907815631264, 3175.124248496994, 3177.8577154308614, 3180.5911823647293, 3183.3246492985973, 3186.058116232465, 3188.7915831663327, 3191.5250501002, 3194.258517034068, 3196.991983967936, 3199.725450901804, 3202.4589178356714, 3205.192384769539, 3207.925851703407, 3210.6593186372747, 3213.392785571142, 3216.1262525050097, 3218.8597194388776, 3221.5931863727455, 3224.3266533066135, 3227.060120240481, 3229.7935871743484, 3232.5270541082164, 3235.2605210420843, 3237.993987975952, 3240.7274549098197, 3243.460921843687, 3246.194388777555, 3248.927855711423, 3251.6613226452905, 3254.394789579158, 3257.128256513026, 3259.861723446894, 3262.595190380762, 3265.3286573146293, 3268.0621242484967, 3270.7955911823647, 3273.5290581162326, 3276.2625250501005, 3278.995991983968, 3281.7294589178355, 3284.4629258517034, 3287.1963927855713, 3289.929859719439, 3292.6633266533063, 3295.396793587174, 3298.130260521042, 3300.86372745491, 3303.5971943887776, 3306.330661322645, 3309.064128256513, 3311.797595190381, 3314.531062124249, 3317.2645290581163, 3319.9979959919838, 3322.7314629258517, 3325.4649298597196, 3328.198396793587, 3330.9318637274546, 3333.6653306613225, 3336.3987975951904, 3339.1322645290584, 3341.865731462926, 3344.5991983967933, 3347.3326653306613, 3350.066132264529, 3352.799599198397, 3355.5330661322646, 3358.266533066132, 3361.0])
+              .range(['#ffffccff', '#ffffccff', '#ffffcbff', '#ffffcaff', '#fffec9ff', '#fffec9ff', '#fffec8ff', '#fffdc7ff', '#fffdc7ff', '#fffdc6ff', '#fffdc5ff', '#fffcc5ff', '#fffcc4ff', '#fffcc3ff', '#fffbc2ff', '#fffbc2ff', '#fffbc1ff', '#fffbc0ff', '#fffac0ff', '#fffabfff', '#fffabeff', '#fff9bdff', '#fff9bdff', '#fff9bcff', '#fff9bbff', '#fff8bbff', '#fff8baff', '#fff8b9ff', '#fff7b8ff', '#fff7b8ff', '#fff7b7ff', '#fff7b6ff', '#fff6b6ff', '#fff6b5ff', '#fff6b4ff', '#fff5b4ff', '#fff5b3ff', '#fff5b2ff', '#fff4b1ff', '#fff4b1ff', '#fff4b0ff', '#fff4afff', '#fff3afff', '#fff3aeff', '#fff3adff', '#fff2acff', '#fff2acff', '#fff2abff', '#fff2aaff', '#fff1aaff', '#fff1a9ff', '#fff1a8ff', '#fff0a7ff', '#fff0a7ff', '#fff0a6ff', '#fff0a5ff', '#ffefa5ff', '#ffefa4ff', '#ffefa3ff', '#ffeea3ff', '#ffeea2ff', '#ffeea1ff', '#ffeea0ff', '#ffeda0ff', '#ffed9fff', '#ffed9eff', '#ffec9eff', '#ffec9dff', '#ffec9cff', '#ffeb9cff', '#ffeb9bff', '#ffeb9aff', '#ffea9aff', '#ffea99ff', '#ffea98ff', '#ffe998ff', '#ffe997ff', '#ffe996ff', '#ffe896ff', '#ffe895ff', '#ffe894ff', '#ffe794ff', '#ffe793ff', '#ffe792ff', '#ffe692ff', '#ffe691ff', '#ffe690ff', '#ffe68fff', '#ffe58fff', '#ffe58eff', '#ffe58dff', '#ffe48dff', '#ffe48cff', '#ffe48bff', '#ffe38bff', '#ffe38aff', '#ffe389ff', '#ffe289ff', '#ffe288ff', '#ffe287ff', '#ffe187ff', '#ffe186ff', '#ffe185ff', '#ffe085ff', '#ffe084ff', '#ffe083ff', '#ffdf83ff', '#ffdf82ff', '#ffdf81ff', '#ffde81ff', '#ffde80ff', '#ffde7fff', '#ffdd7fff', '#ffdd7eff', '#ffdd7dff', '#ffdc7dff', '#ffdc7cff', '#ffdc7bff', '#ffdc7bff', '#ffdb7aff', '#ffdb79ff', '#ffdb78ff', '#ffda78ff', '#ffda77ff', '#ffda76ff', '#fed976ff', '#fed975ff', '#fed874ff', '#fed774ff', '#fed773ff', '#fed672ff', '#fed572ff', '#fed571ff', '#fed470ff', '#fed470ff', '#fed36fff', '#fed26eff', '#fed26eff', '#fed16dff', '#fed06cff', '#fed06cff', '#fecf6bff', '#fecf6aff', '#fece6aff', '#fecd69ff', '#fecd68ff', '#fecc68ff', '#fecb67ff', '#fecb66ff', '#feca66ff', '#feca65ff', '#fec964ff', '#fec864ff', '#fec863ff', '#fec762ff', '#fec662ff', '#fec661ff', '#fec560ff', '#fec45fff', '#fec45fff', '#fec35eff', '#fec35dff', '#fec25dff', '#fec15cff', '#fec15bff', '#fec05bff', '#febf5aff', '#febf59ff', '#febe59ff', '#febe58ff', '#febd57ff', '#febc57ff', '#febc56ff', '#febb55ff', '#feba55ff', '#feba54ff', '#feb953ff', '#feb953ff', '#feb852ff', '#feb751ff', '#feb751ff', '#feb650ff', '#feb54fff', '#feb54fff', '#feb44eff', '#feb44dff', '#feb34dff', '#feb24cff', '#feb24cff', '#feb14bff', '#feb04bff', '#feb04bff', '#feaf4bff', '#feaf4aff', '#feae4aff', '#feae4aff', '#fead4aff', '#feac49ff', '#feac49ff', '#feab49ff', '#feab48ff', '#feaa48ff', '#fea948ff', '#fea948ff', '#fea847ff', '#fea847ff', '#fea747ff', '#fea647ff', '#fea646ff', '#fea546ff', '#fea546ff', '#fea446ff', '#fea345ff', '#fea345ff', '#fea245ff', '#fea245ff', '#fea144ff', '#fea044ff', '#fea044ff', '#fe9f44ff', '#fe9f43ff', '#fe9e43ff', '#fe9d43ff', '#fe9d43ff', '#fe9c42ff', '#fe9c42ff', '#fe9b42ff', '#fe9a42ff', '#fe9a41ff', '#fe9941ff', '#fe9941ff', '#fe9840ff', '#fe9740ff', '#fe9740ff', '#fe9640ff', '#fe963fff', '#fe953fff', '#fe943fff', '#fe943fff', '#fe933eff', '#fe933eff', '#fe923eff', '#fe923eff', '#fe913dff', '#fe903dff', '#fe903dff', '#fe8f3dff', '#fe8f3cff', '#fe8e3cff', '#fe8d3cff', '#fd8d3cff', '#fd8c3bff', '#fd8b3bff', '#fd8a3bff', '#fd883aff', '#fd873aff', '#fd863aff', '#fd853aff', '#fd8439ff', '#fd8339ff', '#fd8239ff', '#fd8138ff', '#fd8038ff', '#fd7f38ff', '#fd7e38ff', '#fd7d37ff', '#fd7c37ff', '#fd7b37ff', '#fd7a36ff', '#fd7936ff', '#fd7836ff', '#fd7736ff', '#fd7635ff', '#fd7535ff', '#fd7435ff', '#fd7334ff', '#fd7234ff', '#fd7134ff', '#fd7033ff', '#fd6f33ff', '#fd6e33ff', '#fd6d33ff', '#fd6c32ff', '#fd6b32ff', '#fd6a32ff', '#fd6931ff', '#fd6831ff', '#fd6731ff', '#fd6631ff', '#fd6530ff', '#fd6430ff', '#fd6330ff', '#fd622fff', '#fd612fff', '#fd602fff', '#fd5f2fff', '#fd5e2eff', '#fd5d2eff', '#fd5c2eff', '#fd5b2dff', '#fd5a2dff', '#fd592dff', '#fd582dff', '#fd572cff', '#fd562cff', '#fd552cff', '#fd542bff', '#fd532bff', '#fd522bff', '#fd512aff', '#fd502aff', '#fd4f2aff', '#fc4e2aff', '#fc4d29ff', '#fc4c29ff', '#fb4b29ff', '#fb4a29ff', '#fa4a29ff', '#fa4928ff', '#fa4828ff', '#f94728ff', '#f94628ff', '#f84527ff', '#f84427ff', '#f84427ff', '#f74327ff', '#f74226ff', '#f64126ff', '#f64026ff', '#f63f26ff', '#f53f26ff', '#f53e25ff', '#f43d25ff', '#f43c25ff', '#f43b25ff', '#f33a24ff', '#f33a24ff', '#f23924ff', '#f23824ff', '#f23724ff', '#f13623ff', '#f13523ff', '#f03523ff', '#f03423ff', '#f03322ff', '#ef3222ff', '#ef3122ff', '#ee3022ff', '#ee3022ff', '#ee2f21ff', '#ed2e21ff', '#ed2d21ff', '#ec2c21ff', '#ec2b20ff', '#ec2b20ff', '#eb2a20ff', '#eb2920ff', '#ea281fff', '#ea271fff', '#ea261fff', '#e9261fff', '#e9251fff', '#e8241eff', '#e8231eff', '#e8221eff', '#e7211eff', '#e7211dff', '#e6201dff', '#e61f1dff', '#e61e1dff', '#e51d1dff', '#e51c1cff', '#e41b1cff', '#e41b1cff', '#e31a1cff', '#e3191cff', '#e2191cff', '#e2181cff', '#e1181cff', '#e0181cff', '#e0171dff', '#df171dff', '#df161dff', '#de161dff', '#dd161dff', '#dd151dff', '#dc151eff', '#dc141eff', '#db141eff', '#da131eff', '#da131eff', '#d9131eff', '#d9121eff', '#d8121fff', '#d7111fff', '#d7111fff', '#d6111fff', '#d5101fff', '#d5101fff', '#d40f20ff', '#d40f20ff', '#d30e20ff', '#d20e20ff', '#d20e20ff', '#d10d20ff', '#d10d21ff', '#d00c21ff', '#cf0c21ff', '#cf0b21ff', '#ce0b21ff', '#ce0b21ff', '#cd0a22ff', '#cc0a22ff', '#cc0922ff', '#cb0922ff', '#ca0922ff', '#ca0822ff', '#c90822ff', '#c90723ff', '#c80723ff', '#c70623ff', '#c70623ff', '#c60623ff', '#c60523ff', '#c50524ff', '#c40424ff', '#c40424ff', '#c30424ff', '#c30324ff', '#c20324ff', '#c10225ff', '#c10225ff', '#c00125ff', '#bf0125ff', '#bf0125ff', '#be0025ff', '#be0026ff', '#bd0026ff', '#bc0026ff', '#bb0026ff', '#ba0026ff', '#b90026ff', '#b80026ff', '#b70026ff', '#b60026ff', '#b50026ff', '#b40026ff', '#b30026ff', '#b20026ff', '#b10026ff', '#b00026ff', '#af0026ff', '#ae0026ff', '#ad0026ff', '#ac0026ff', '#ab0026ff', '#aa0026ff', '#a90026ff', '#a80026ff', '#a70026ff', '#a60026ff', '#a50026ff', '#a40026ff', '#a30026ff', '#a20026ff', '#a10026ff', '#a00026ff', '#9f0026ff', '#9e0026ff', '#9d0026ff', '#9c0026ff', '#9b0026ff', '#9b0026ff', '#9a0026ff', '#990026ff', '#980026ff', '#970026ff', '#960026ff', '#950026ff', '#940026ff', '#930026ff', '#920026ff', '#910026ff', '#900026ff', '#8f0026ff', '#8e0026ff', '#8d0026ff', '#8c0026ff', '#8b0026ff', '#8a0026ff', '#890026ff', '#880026ff', '#870026ff', '#860026ff', '#850026ff', '#840026ff', '#830026ff', '#820026ff', '#810026ff', '#800026ff']);
+    
+
+    color_map_403bf2ba8fe847c992a8da1418af06b4.x = d3.scale.linear()
+              .domain([1997.0, 3361.0])
+              .range([0, 450 - 50]);
+
+    color_map_403bf2ba8fe847c992a8da1418af06b4.legend = L.control({position: 'topright'});
+    color_map_403bf2ba8fe847c992a8da1418af06b4.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_403bf2ba8fe847c992a8da1418af06b4.legend.addTo(map_3669f884a9b79597cf429aa28bc97a85);
+
+    color_map_403bf2ba8fe847c992a8da1418af06b4.xAxis = d3.svg.axis()
+        .scale(color_map_403bf2ba8fe847c992a8da1418af06b4.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([1997.0, 2167.5, 2338.0, 2508.5, 2679.0, 2849.5, 3020.0, 3190.5, 3361.0]);
+
+    color_map_403bf2ba8fe847c992a8da1418af06b4.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_403bf2ba8fe847c992a8da1418af06b4.g = color_map_403bf2ba8fe847c992a8da1418af06b4.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_403bf2ba8fe847c992a8da1418af06b4.g.selectAll("rect")
+        .data(color_map_403bf2ba8fe847c992a8da1418af06b4.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_403bf2ba8fe847c992a8da1418af06b4.x(color_map_403bf2ba8fe847c992a8da1418af06b4.color.domain()[i - 1]) : color_map_403bf2ba8fe847c992a8da1418af06b4.x.range()[0],
+            x1: i < color_map_403bf2ba8fe847c992a8da1418af06b4.color.domain().length ? color_map_403bf2ba8fe847c992a8da1418af06b4.x(color_map_403bf2ba8fe847c992a8da1418af06b4.color.domain()[i]) : color_map_403bf2ba8fe847c992a8da1418af06b4.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_403bf2ba8fe847c992a8da1418af06b4.g.call(color_map_403bf2ba8fe847c992a8da1418af06b4.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("\uc815\ub958\uc7a5 \uc815\ucc28 \ud69f\uc218 (TOP 20)");
+</script>
+</html>
